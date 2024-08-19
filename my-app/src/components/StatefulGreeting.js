@@ -13,43 +13,22 @@ class StatefulGreeting extends React.Component {
     }
 
     handleClick() {
-        if (this.state.id === 1) {
-            this.setState({
-                id: 0,
-                introduction: "Goodbye",
-                buttonText: "Enter",
-            }, 
-            () => {
-                console.log('New State', this.state)
-            });
-        }
-        else {
-            this.setState({
-                id: 1,
-                introduction: "Hello",
-                buttonText: "Exit",
-            }, 
-            () => {
-                console.log('New State', this.state)
-            });
-        }
+        this.setState((prevState, prevProps) => {
+            console.log('Previous State', prevState);
+            console.log('Previous Props', prevProps);
+            return {
+                introduction: prevState.introduction === "Hello" ? "Goodbye" : "Hello",
+                buttonText: prevState.buttonText === "Exit" ? "Enter" : "Exit",
+            }
+        })
     }
 
     increment() {
-        this.setState({
-            count: this.state.count + 1,
-        },
-        () => {
-            console.log(this.state.count);
-        }
-        );
-    }
-    incrementFive() {
-        this.increment();
-        this.increment();
-        this.increment();
-        this.increment();
-        this.increment();
+        this.setState((prevState, prevProps) => {
+            console.log('Previous State', prevState);
+            console.log('Previous Props', prevProps);
+            return {count: prevState.count + 1};
+        })
     }
 
     render() {
@@ -58,7 +37,7 @@ class StatefulGreeting extends React.Component {
                 <h1>{this.state.introduction} {this.props.greeting},</h1>
                 <button onClick={() => this.handleClick()}>{this.state.buttonText}</button>
                 <h1>Count: {this.state.count}</h1>
-                <button onClick={() => this.incrementFive()}>Increment + </button>
+                <button onClick={() => this.increment()}>Increment + </button>
             </div>
         )
     }
