@@ -1,13 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-function FunctionalGreetingWithProps(props) {
-  return (
-    <h1>Hello From React</h1>>
-    <p>With Props</p>
-  )
+const FunctionalGreetingWithProps = (props) => {
+    console.log(props);
+  return  <h1>Hello {props.name}, {props.greeting}</h1>
 }
-
-FunctionalGreetingWithProps.propTypes = {}
 
 export default FunctionalGreetingWithProps
