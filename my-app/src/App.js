@@ -12,6 +12,8 @@ import ConditionalRenderingClass from './components/ConditionalRenderingClass';
 function App() {
   return (
     <div className="App">
+      <ConditionalRenderingClass />
+      <ConditionalRenderingFunctional connected={true}/>
     </div>
   );
 }
