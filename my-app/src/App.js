@@ -8,12 +8,13 @@ import './App.css';
 // import EventBindings from './components/EventBinding';
 // import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 // import ConditionalRenderingClass from './components/ConditionalRenderingClass';
-import NestingCompenents from './components/NestingComponents';
+// import NestingCompenents from './components/NestingComponents';
+import MethodAsPropsParent from './components/MethodAsPropsParent';
 
 function App() {
   return (
     <div className="App">
-      <NestingCompenents />
+       <MethodAsPropsParent />
     </div>
   );
 }
