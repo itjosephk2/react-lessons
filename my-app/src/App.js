@@ -18,12 +18,13 @@ import './App.css';
 // import ControlledForm from './components/ControlledForm';
 // import UncontrolledForm from './components/UncontrolledForm';
 // import SearchBar from './components/SearchBar';
-import ControlledFormHooks from './components/ControlledFormHooks';
+// import ControlledFormHooks from './components/ControlledFormHooks';
+import UseStateWithArray from './components/UseStateWithArray';
 
 function App() {
   return (
     <div className="App">
-      <ControlledFormHooks />
+      <UseStateWithArray />
     </div>
   );
 }
