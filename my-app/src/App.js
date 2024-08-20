@@ -10,12 +10,14 @@ import './App.css';
 // import ConditionalRenderingClass from './components/ConditionalRenderingClass';
 // import NestingCompenents from './components/NestingComponents';
 // import MethodAsPropsParent from './components/MethodAsPropsParent';
-import RenderingLists from './components/RenderingLists';
+// import RenderingLists from './components/RenderingLists';
+import LifeCyclesCDM from './components/LifeCyclesCDM';
+import LifeCyclesCDMChild from './components/LifCyclesCDMChild';
 
 function App() {
   return (
     <div className="App">
-      <RenderingLists />
+      <LifeCyclesCDM />
     </div>
   );
 }
