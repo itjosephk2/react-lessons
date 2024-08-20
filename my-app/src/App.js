@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import FunctionalGreeting from './components/FunctionalGreeting';
 // import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
@@ -14,12 +14,13 @@ import './App.css';
 // import LifeCyclesCDM from './components/LifeCyclesCDM';
 // import LifeCyclesCDMChild from './components/LifCyclesCDMChild';
 // import LifeCyclesCDU from './components/LifeCyclesCDU';
-import LifeCyclesCWU from './components/LIfeCyclesCWU';
+// import LifeCyclesCWU from './components/LIfeCyclesCWU';
+import ControlledForm from './components/ControlledForm';
 
 function App() {
   return (
     <div className="App">
-      <LifeCyclesCWU />
+      <ControlledForm/>
     </div>
   );
 }
