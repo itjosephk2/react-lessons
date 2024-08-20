@@ -11,13 +11,14 @@ import './App.css';
 // import NestingCompenents from './components/NestingComponents';
 // import MethodAsPropsParent from './components/MethodAsPropsParent';
 // import RenderingLists from './components/RenderingLists';
-import LifeCyclesCDM from './components/LifeCyclesCDM';
-import LifeCyclesCDMChild from './components/LifCyclesCDMChild';
+// import LifeCyclesCDM from './components/LifeCyclesCDM';
+// import LifeCyclesCDMChild from './components/LifCyclesCDMChild';
+import LifeCyclesCDU from './components/LifeCyclesCDU';
 
 function App() {
   return (
     <div className="App">
-      <LifeCyclesCDM />
+      <LifeCyclesCDU />
     </div>
   );
 }
