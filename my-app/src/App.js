@@ -19,12 +19,14 @@ import './App.css';
 // import UncontrolledForm from './components/UncontrolledForm';
 // import SearchBar from './components/SearchBar';
 // import ControlledFormHooks from './components/ControlledFormHooks';
-import UseStateWithArray from './components/UseStateWithArray';
+// import UseStateWithArray from './components/UseStateWithArray';
+// import UseStateWithObjects from './components/UseStateWithObjects';
+import UseEffectCounter from './components/UseEffectCounter';
 
 function App() {
   return (
     <div className="App">
-      <UseStateWithArray />
+      <UseStateWithObjects />
     </div>
   );
 }
