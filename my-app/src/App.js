@@ -23,12 +23,13 @@ import './App.css';
 // import UseStateWithObjects from './components/UseStateWithObjects';
 // import UseEffectCounter from './components/UseEffectCounter';
 // import UseEffectCounterContainer from './components/UseEffectCounterContainer';
-import HTTPRequest from './components/HTTPRequest';
+// import HTTPRequest from './components/HTTPRequest';
+import HTTPPost from './components/HTTPPost';
 
 function App() {
   return (
     <div className="App">
-      <HTTPRequest/>
+      <HTTPPost/>
     </div>
   );
 }
